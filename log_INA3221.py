@@ -30,7 +30,7 @@ output_file = open(filename, 'w')
 
 print "Power Logging Started at: "+ time.strftime("%Y-%m-%d %H:%M:%S")
 
-output_file.write("time, current (mA), voltage")
+output_file.write("time, voltage, current (mA)")
 
 ina3221 = SDL_Pi_INA3221.SDL_Pi_INA3221(addr=0x40)
 
